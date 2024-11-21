@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.expense-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full screen height */
+  background: linear-gradient(to bottom, #2e3b55, #4a6075);
+  font-family: Arial, sans-serif;
+}
+
+form {
+  background-color: #fff;
+  padding: 30px 30px;  /* Increased padding to make the form a bit longer */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  min-height: 400px;  /* Added min-height to make the form taller */
+  display: flex;
+  flex-direction: column; /* Ensures form elements stack vertically */
+  justify-content: space-around; /* Space out the form elements */
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 12px;  /* Slightly increased padding for a better look */
+  margin-right: 10px;
+  margin-left: 10px;
+
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Adds space above the button */
+}
+
+button:hover {
+  background-color: #3b78c2;
+}
+
+option[disabled] {
+  color: #999;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;  /* Adjusted to give more space between heading and inputs */
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  form {
+    padding: 20px 20px;  /* Reduce padding slightly on smaller screens */
+    min-height: 400px;  /* Reduce height for smaller screens */
+  }
+}
